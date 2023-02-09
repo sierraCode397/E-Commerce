@@ -1,5 +1,6 @@
 const path = require("path");//Le permite saber donde esta ubicado este proyecto donde se este utilizando
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssEstractPlugin = require("mini-css-extract-plugin"); //De esta forma declaras los plugins para tu proyecto
 
 import('webpack').Configuration; //Auto completado
 
@@ -29,6 +30,14 @@ module.exports = {
                         loader: "html-loader"
                     }
                 ]
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader",
+                ],
             }
         ]
     },
@@ -37,5 +46,8 @@ module.exports = {
             template: "./public/index.html",
             filename: "./index.html"
         }),  //ESTO FACILITA EL TRABAJO EN HTML
-    ]
+        new MiniCssEstractPlugin({
+            filename: "[name].css"
+        })
+    ],
 }
