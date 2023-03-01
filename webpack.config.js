@@ -12,6 +12,14 @@ module.exports = {
 	mode: 'development',
 	resolve: {
 		extensions: ['.js', '.jsx'],
+		alias: {
+				'@components': path.resolve(__dirname, 'src/components'),
+				'@containers': path.resolve(__dirname, 'src/containers'),
+				'@pages': path.resolve(__dirname, 'src/pages'),
+				'@styles': path.resolve(__dirname, 'src/styles'),
+				'@icons': path.resolve(__dirname, 'src/assets/Platzi_YardSale_Icons'),
+				'@logos': path.resolve(__dirname, 'src/assets/Platzi_YardSale_Logos'),
+			  },
 	},
 	module: {
 		rules: [
@@ -37,7 +45,11 @@ module.exports = {
 					"css-loader",
 					"sass-loader",
 				],
-			}
+			},
+			{
+				test: /\.(png|jp(e*)g|svg|gif)$/,
+				type: "asset",
+			},
 		]
 	},
 	plugins: [
