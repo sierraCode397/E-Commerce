@@ -1,6 +1,7 @@
 @import 'vars';
 
 .Menu {
+	background-color: var(--white);
 	width: 15rem;
 	height: auto;
 	border: 0.1rem solid var(--very-light-pink);
@@ -42,5 +43,5 @@
 .navbar-email:hover {
     cursor: pointer;
 	font-weight: bold;
-    color: var(--hospital-green);
+    color: var(--very-light-pink);
   }
