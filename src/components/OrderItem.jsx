@@ -3,14 +3,14 @@ import '@styles/OrderItem.scss';
 
 import close from "@icons/icon_close.png";
 
-const OrderItem = () => {
+const OrderItem = ({product}) => {
 	return (
 		<div className="OrderItem">
 			<figure>
-				<img src="https://imgur.com/C9u9gLm.jpg" alt="Camera" />
+				<img src={product.images[0]} alt={product.title} />
 			</figure>
-			<p>Camera</p>
-			<p>$30,00</p>
+			<p>{product.title}</p>
+			<p>{product.price}</p>
 			<img src= {close} alt="close" />
 		</div>
 	);
