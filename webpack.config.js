@@ -20,6 +20,7 @@ module.exports = {
 				'@icons': path.resolve(__dirname, 'src/assets/Platzi_YardSale_Icons'),
 				'@logos': path.resolve(__dirname, 'src/assets/Platzi_YardSale_Logos'),
 				'@hooks': path.resolve(__dirname, 'src/hooks'),
+				'@context': path.resolve(__dirname, 'src/context'),
 			  },
 	},
 	module: {
