@@ -49,7 +49,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(png|jp(e*)g|svg|gif)$/,
+				test: /\.(png|jp(e*)g|svg|gif|webp)$/,
 				type: "asset",
 			},
 		]
@@ -65,5 +65,8 @@ module.exports = {
 	],
 	devServer: {
 		historyApiFallback: true,
+		static: path.join(__dirname, 'dist'),
+        compress:true,
+        port:3005,
 	}
 }
