@@ -13,6 +13,7 @@
 	border-radius: 0.6rem;
 	background-color: var(--white);
 	border: 0.1rem solid var(--very-light-pink);
+	animation: swipeLeft 0.26s ease;
 }
 .title-container {
 	display: flex;
@@ -83,6 +84,16 @@
 	font-weight: bold;
 	height: 5rem;
 }
+
+@keyframes swipeLeft {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 360px;
+    }
+}
+
 @media (max-width: 710px) {
 	.MyOrder {
 		width: 100%;
