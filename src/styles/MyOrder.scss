@@ -33,15 +33,14 @@
 }
 
 .arrow{
-	width: 2rem;
+	width: 1rem;
 	height: 2rem;
-	padding: 0.2rem;
+	cursor: pointer;
 }
 
 .arrow:hover{
-    cursor: pointer;
-	border-radius: 50%;
-	border: 0.2rem solid var(--very-light-pink);
+    width: 1.2rem;
+	height: 2.2rem;
 }
 
 .my-order-content{
@@ -77,12 +76,21 @@
 	background-color: var(--hospital-green);
 	border-radius: 0.8rem;
 	border: none;
-	color: var(--white);
 	width: 100%;
 	cursor: pointer;
 	font-size: var(--md);
 	font-weight: bold;
 	height: 5rem;
+}
+
+.primary-button a{
+	text-decoration: none;
+	color: var(--white);
+}
+
+.primary-button:hover {
+	border: 0.1rem solid var(--black);
+	height: 5.2rem;
 }
 
 @keyframes swipeLeft {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '@styles/PasswordRecovery.scss';
 
 import logo from "@logos/logo_yard_sale.svg";
@@ -13,7 +14,9 @@ const PasswordRecovery = () => {
 				<form action="/" className="form">
 					<label htmlFor="email" className="label">Email address</label>
 					<input type="text" id="email" className="input input-email" />
-					<input type="submit" value="Confirm" className="primary-button login-button" />
+					<button className="primary-button login-button">
+						<Link to="/send-email">Confirm</Link>
+					</button>
 				</form>
 			</div>
 		</div>

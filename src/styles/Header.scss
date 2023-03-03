@@ -11,8 +11,10 @@ nav {
     background-color: var(--white);
 }
 
-.menu {
+.menu-container {
     display: none;
+    width: 2.5rem;
+    height: 2.1rem;
 }
 
 .nav-logo {
@@ -59,6 +61,12 @@ nav {
 
 .navbar-shopping-cart{
     position: relative;
+    cursor: pointer;
+}
+
+.navbar-shopping-cart img:hover {
+    width: 2.7rem;
+    height: 2.7rem;
 }
 
 .navbar-shopping-cart div {
@@ -77,8 +85,14 @@ nav {
 }
 
 @media (max-width: 740px) {
-    .menu {
+    .menu-container {
         display: block;
+        margin-top: 1.8rem;
+    }
+
+    .menu:hover{
+        width: 2.7rem;
+        height: 2.3rem;
     }
 
     .navbar-left ul {

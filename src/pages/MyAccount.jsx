@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '@styles/MyAccount.scss';
 
 const MyAccount = () => {
@@ -8,14 +9,16 @@ const MyAccount = () => {
 				<h1 className="title">My account</h1>
 				<form action="/" className="form">
 					<div>
-						<label for="name" className="label">Name</label>
-						<p className="value">Camila Yokoo</p>
-						<label for="email" className="label">Email</label>
-						<p className="value">camilayokoo@gmail.com</p>
-						<label for="password" className="label">Password</label>
+						<label htmlFor="name" className="label">Name</label>
+						<p className="value">UserExample</p>
+						<label htmlFor="email" className="label">Email</label>
+						<p className="value">UserExample@gmail.com</p>
+						<label htmlFor="password" className="label">Password</label>
 						<p className="value">*********</p>
 					</div>
-					<input type="submit" value="Edit" className="secondary-button login-button" />
+					<Link to="/signup">
+						<button className="secondary-button login-button" >Edit</button>
+					</Link>
 				</form>
 			</div>
 		</div>

@@ -54,7 +54,7 @@
 	color: var(--hospital-green);
 	text-decoration: none;
 }
-.primary-button {
+.primary-buttont {
 	background-color: var(--hospital-green);
 	border-radius: 8px;
 	border: none;
@@ -64,6 +64,9 @@
 	font-size: var(--md);
 	font-weight: bold;
 	height: 50px;
+}
+.primary-buttont a {
+	color: var(--white);
 }
 .login-button {
 	margin-top: 14px;
