@@ -38,22 +38,22 @@ const Header = () => {
 				<img src={logo} alt="logo" className="nav-logo" />
 				<ul>
 					<li>
-						<Link to="/E-Commerce">All</Link>
+						<Link to="/#">All</Link>
 					</li>
 					<li>
-						<Link to="/E-Commerce">Clothes</Link>
+						<Link to="/#">Clothes</Link>
 					</li>
 					<li>
-						<Link to="/E-Commerce">Electronics</Link>
+						<Link to="/#">Electronics</Link>
 					</li>
 					<li>
-						<Link to="/E-Commerce">Furnitures</Link>
+						<Link to="/#">Furnitures</Link>
 					</li>
 					<li>
-						<Link to="/E-Commerce">Toys</Link>
+						<Link to="/#">Toys</Link>
 					</li>
 					<li>
-						<Link to="/E-Commerce/*">Others</Link>
+						<Link to="/*">Others</Link>
 					</li>
 				</ul>
 			</div>

@@ -21,13 +21,13 @@ const Login = () => {
 		<div className="Login">
 			<div className="Login-container">
 				<img src= {logo} alt="logo" className="logo" />
-				<form action="/" className="form" ref={form}>
+				<form action="/" className="form-login" ref={form}>
 					<label htmlFor="email" className="label">Email address</label>
 					<input type="text" name="email" placeholder="userEmail@example.com" className="input input-email" />
 					<label htmlFor="password" className="label">Password</label>
 					<input type="password" name="password" placeholder="*********" className="input input-password" />
-					<Link to="/E-Commerce">
-						<button className="primary-button-login login-button" onClick={handleSubmit}>
+					<Link to="/#">
+						<button className="primary-button-login login-button-primary" onClick={handleSubmit}>
 							Log in
 						</button>
 					</Link>

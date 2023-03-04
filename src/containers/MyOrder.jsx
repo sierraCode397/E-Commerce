@@ -34,8 +34,12 @@ const MyOrder = () => {
 					<p className="title" onClick={() => setToggleOrders(true)}>My order</p>
 				</div>
 				<div className="my-order-content">
-					{state.cart.map(item => (
-						<OrderItem product={item} key={`orderItem-${item.id}`} />
+				{state.cart.map((product,index) => (
+				<OrderItem 
+					indexValue={index}
+					key={index}
+					product={product} 
+				/>
 					))}
 					<div className="order">
 						<p>
