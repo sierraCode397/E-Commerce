@@ -14,9 +14,12 @@ const PasswordRecovery = () => {
 				<form action="/" className="form">
 					<label htmlFor="email" className="label">Email address</label>
 					<input type="text" id="email" className="input input-email" />
-					<button className="primary-button login-button">
-						<Link to="/send-email">Confirm</Link>
-					</button>
+					
+					<Link to="/send-email">
+						<button className="primary-buttont login-button">
+							Confirm
+						</button>
+					</Link>
 				</form>
 			</div>
 		</div>

@@ -54,18 +54,18 @@
 	color: var(--hospital-green);
 	text-decoration: none;
 }
-.primary-buttont {
+.primary-button-email {
 	background-color: var(--hospital-green);
 	border-radius: 8px;
 	border: none;
 	color: var(--white);
-	width: 100%;
+	width: 30rem;
 	cursor: pointer;
 	font-size: var(--md);
 	font-weight: bold;
 	height: 50px;
 }
-.primary-buttont a {
+.primary-button-email a {
 	color: var(--white);
 }
 .login-button {

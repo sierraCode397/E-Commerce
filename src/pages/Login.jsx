@@ -26,15 +26,17 @@ const Login = () => {
 					<input type="text" name="email" placeholder="userEmail@example.com" className="input input-email" />
 					<label htmlFor="password" className="label">Password</label>
 					<input type="password" name="password" placeholder="*********" className="input input-password" />
-					<button className="primary-buttonl login-button" onClick={handleSubmit}>
-						<a href="/" className='button-log-in'> Log in</a>
-					</button>
+					<Link to="/E-Commerce">
+						<button className="primary-button-login login-button" onClick={handleSubmit}>
+							Log in
+						</button>
+					</Link>
 					<Link to="/password-recovery">Forgot my password</Link>
 				</form>
 				
 				<Link to="/signup">
 					<button className="secondary-button signup-button">
-						Sign up
+						Create account
 					</button>
 				</Link> 
 			</div>

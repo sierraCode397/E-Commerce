@@ -16,7 +16,7 @@ const NewPassword = () => {
 					<input type="password" id="password" placeholder="*********" className="input input-password" />
 					<label htmlFor="new-password" className="label">Password</label>
 					<input type="password" id="new-password" placeholder="*********" className="input input-password" />
-					<Link to="/" >
+					<Link to="/login" >
 						<button className="primary-buttont login-button">Confirm</button>
 					</Link>
 				</form>

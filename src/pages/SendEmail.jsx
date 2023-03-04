@@ -14,10 +14,12 @@ const SendEmail = () => {
 				<div className="email-image">
 					<img src={email} alt="email" />
 				</div>
-				
-					<button className="primary-buttont login-button">
-						<Link to="/">Login</Link>
+
+				<Link to="/new-password">
+					<button className="primary-button-email login-button">
+						Login
 					</button>
+				</Link>
 				
 				<p className="resend">
 					<span>Didn't receive the email?</span>

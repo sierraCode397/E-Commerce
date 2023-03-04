@@ -16,8 +16,8 @@ const CreateAccount = () => {
 						<label for="password" className="label">Password</label>
 						<input type="password" id="password" placeholder="*********" className="input input-password" />
 					</div>
-					<Link to="/">
-						<button className="primary-button login-button" >Create</button>
+					<Link to="/E-Commerce">
+						<button className="primary-button-account login-button" >Create</button>
 					</Link>
 				</form>
 			</div>

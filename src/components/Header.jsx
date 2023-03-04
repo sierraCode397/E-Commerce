@@ -1,4 +1,5 @@
 import React, {useState, useContext} from 'react';
+import { Link } from 'react-router-dom';
 import '@styles/Header.scss';
 import Menu from "@components/Menu";
 import MyOrder from "@containers/MyOrder";
@@ -37,22 +38,22 @@ const Header = () => {
 				<img src={logo} alt="logo" className="nav-logo" />
 				<ul>
 					<li>
-						<a href="/#">All</a>
+						<Link to="/E-Commerce">All</Link>
 					</li>
 					<li>
-						<a href="/#">Clothes</a>
+						<Link to="/E-Commerce">Clothes</Link>
 					</li>
 					<li>
-						<a href="/#">Electronics</a>
+						<Link to="/E-Commerce">Electronics</Link>
 					</li>
 					<li>
-						<a href="/#">Furnitures</a>
+						<Link to="/E-Commerce">Furnitures</Link>
 					</li>
 					<li>
-						<a href="/#">Toys</a>
+						<Link to="/E-Commerce">Toys</Link>
 					</li>
 					<li>
-						<a href="/#/*">Others</a>
+						<Link to="/E-Commerce/*">Others</Link>
 					</li>
 				</ul>
 			</div>
