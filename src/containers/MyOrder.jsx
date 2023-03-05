@@ -24,22 +24,16 @@ const MyOrder = () => {
 	  }
 	};
 
-	const [ toggleOrders, setToggleOrders ] = useState(false);
-
 	if (menu == true) {
 		return (
 			<aside className="MyOrder">
 				<div className="title-container">		
 						<img src= {arrow} alt="arrow" onClick={handleMenu} className="arrow" />
-					<p className="title" onClick={() => setToggleOrders(true)}>My order</p>
+					<p className="title">My order</p>
 				</div>
 				<div className="my-order-content">
-				{state.cart.map((product,index) => (
-				<OrderItem 
-					indexValue={index}
-					key={index}
-					product={product} 
-				/>
+				{state.cart.map(product => (
+				<OrderItem product={product} key={`orderItem-${product.id}`}/>
 					))}
 					<div className="order">
 						<p>
@@ -51,7 +45,7 @@ const MyOrder = () => {
 						<a href="/#/orders">Checkout</a> 
 					</button>
 				</div>
-				{toggleOrders && <Orders setToggleOrders={setToggleOrders}/>}
+
 			</aside>
 		);
 	}

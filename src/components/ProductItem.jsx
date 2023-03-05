@@ -2,13 +2,14 @@ import React, {useContext} from 'react';
 import '@styles/ProductItem.scss';
 import AppContext from '@context/AppContext';
 import addTo from "@icons/bt_add_to_cart.svg";
+import addEnd from "@icons/bt_added_to_cart.svg"
 
 const ProductItem = ({producth}) => {
-	const { addToCart } = useContext(AppContext);
+	const { addToCart, removeFromCart, state } = useContext(AppContext);
 
 	const handleClick = item => {
-		addToCart(item);
-	}
+			!state.cart.includes(item) ? addToCart(item): removeFromCart(item);
+	    };
 
 	return (
 		<div className="ProductItem">
@@ -19,7 +20,7 @@ const ProductItem = ({producth}) => {
 					<p>{producth.title}</p>
 				</div>
 				<figure onClick={() => handleClick(producth)} className="container-Addto">
-					<img src= {addTo} alt="add to cart" />
+					{state.cart.includes(producth) ? <img src={addEnd} alt="add-to-card" /> : <img src={addTo} alt="add-to-card" />}
 				</figure>
 			</div>
 		</div>

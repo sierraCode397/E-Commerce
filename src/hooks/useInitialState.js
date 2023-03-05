@@ -3,10 +3,6 @@ import { useState } from "react";
 const initialState = {
 	cart: [],
 }
-const aleatorio = (min, maxi) => {
-    let resultado = Math.floor(Math.random() * (maxi - min + 1)) + min;
-    return resultado
-}
 
 const useInitialState = () => {
 	const [state, setState] = useState(initialState);
@@ -19,10 +15,10 @@ const useInitialState = () => {
 
     }
 
-    const removeFromCart = (indexValue) => {
+    const removeFromCart = (payload) => {
         setState({
             ...state,
-            cart: state.cart.filter((product,index) => index !== indexValue),
+            cart: state.cart.filter(items => items.id !== payload.id),
         })
     }
 

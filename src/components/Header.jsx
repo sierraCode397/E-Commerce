@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import '@styles/Header.scss';
 import Menu from "@components/Menu";
 import MyOrder from "@containers/MyOrder";
+import AppContext from "@context/AppContext";
 import menu from "@icons/icon_menu.svg"
 import logo from "@logos/logo_yard_sale.svg"
-import AppContext from "@context/AppContext";
 import shoppingCart from "@icons/icon_shopping_cart.svg"
 
 const Header = () => {

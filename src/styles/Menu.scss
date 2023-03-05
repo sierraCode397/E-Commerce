@@ -1,6 +1,7 @@
 @import 'vars';
 
 .Menu {
+	z-index: 1;
 	background-color: var(--white);
 	width: 15rem;
 	height: auto;
