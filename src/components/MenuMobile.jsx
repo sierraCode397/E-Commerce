@@ -2,7 +2,6 @@ import React, {useContext, useState} from "react";
 import { Link } from "react-router-dom";
 import AppContext from "@context/AppContext";
 import "@styles/MenuMobile.scss";
-import menu from "@icons/icon_menu.svg"
 
 const MenuMobile = () => {
     const { setMenuMobile, toggleMenu } = useContext(AppContext)
@@ -46,7 +45,7 @@ const MenuMobile = () => {
 
             <ul>
                 <li>
-                    <Link to="/#" className="email">izaack107@gmail.com</Link>
+                    <Link to="/#" className="email" onClick={() => setMenuMobile(!toggleMenu)}>izaack107@gmail.com</Link>
                 </li>
                 <li>
                     <Link to="/login" className="sing-out" onClick={() => setMenuMobile(!toggleMenu)}>Sing out</Link>

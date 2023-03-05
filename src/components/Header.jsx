@@ -10,13 +10,7 @@ import logo from "@logos/logo_yard_sale.svg"
 import shoppingCart from "@icons/icon_shopping_cart.svg"
 
 const Header = () => {
-	const [toggle, setToggle] = useState(false)
-	
-	const [toggleOrders, setToggleOrders] = useState(false)
-	const { state, setMenuMobile, toggleMenu } = useContext(AppContext)
-	const handleToggle = () => {
-		setToggle(!toggle)
-	}
+	const { state, setMenuMobile, toggleMenu, toggle, setToggle, toggleOrders, setToggleOrders } = useContext(AppContext)
 
 	const verifyCart = (cartNumber) => {
 		if (cartNumber && (cartNumber < 9)) {
@@ -67,7 +61,7 @@ const Header = () => {
 			</div>
 			<div className="navbar-right">
 				<ul>
-					<li className="navbar-email" onClick={handleToggle}>userName@example.com</li>
+					<li className="navbar-email" onClick={() => setToggle(!toggle)}>userName@example.com</li>
 					<li className="navbar-shopping-cart" onClick={() => setToggleOrders(!toggleOrders)}>
 						<img src={shoppingCart} alt="shopping cart" />
 						{verifyCart(state.cart.length)}

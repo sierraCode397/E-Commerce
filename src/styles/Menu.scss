@@ -45,4 +45,10 @@
     cursor: pointer;
 	font-weight: bold;
     color: var(--very-light-pink);
-  }
+}
+
+@media (max-width: 740px) {
+	.Menu {
+		display: none;
+	}
+}

@@ -24,6 +24,8 @@
 .title {
 	font-size: var(--lg);
 	font-weight: bold;
+	text-decoration: none;
+	color: var(--black);
 }
 
 .title:hover {
@@ -80,9 +82,6 @@
 	font-size: var(--md);
 	font-weight: bold;
 	height: 5rem;
-}
-
-.primary-button a{
 	text-decoration: none;
 	color: var(--white);
 }

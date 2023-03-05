@@ -1,23 +1,27 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import OrderItem from '@components/OrderItem';
-import Menu from '@components/Menu';
+import AppContext from '@context/AppContext';
 import '@styles/Checkout.scss';
 
 const Checkout = () => {
+	const {state, sumTotal, formattedDate} = useContext(AppContext)
+
 	return (
 		<div className="Checkout">
 			<div className="Checkout-container">
-				<h1 className="title">My order</h1>
+				<h1 className="title">My order checkout</h1>
 				<div className="Checkout-content">
 					<div className="order">
 						<p>
-							<span>03.25.21</span>
-							<span>6 articles</span>
+							<span>{formattedDate}</span>
+							<span>{state.cart.length} Articulos</span>
 						</p>
-						<p>$560.00</p>
+						<p>${sumTotal()}</p>
 					</div>
 				</div>
-				<OrderItem />
+				{state.cart.map(product => (
+						<OrderItem product={product} key={`orderItem-${product.id}`}/>
+				))}
 			</div>
 		</div>
 	);

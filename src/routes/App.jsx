@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import Layout from '@containers/Layout';
 import Home from '@pages/Home';
@@ -14,6 +14,13 @@ import NotFound from '@pages/NotFound';
 import AppContext from '@context/AppContext';
 import useInitialState from '@hooks/useInitialState';
 import '@styles/global.css';
+
+
+/*   const componentDidMount =() => {
+    document.cookie = "nombreDeLaCookie=valorDeLaCookie; SameSite=Lax";
+  }
+  const cookie = componentDidMount(); */
+
 
 const App = () => {
   const initialState = useInitialState();
