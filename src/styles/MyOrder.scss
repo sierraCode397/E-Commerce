@@ -4,7 +4,6 @@
 	width: 36rem;
 	min-height: 80%;
 	padding: 2.4rem;
-	box-sizing: border-box;
 	position: fixed;
 	overflow-y: auto;
 	right: 0;
@@ -89,7 +88,7 @@
 }
 
 .primary-button:hover {
-	border: 0.1rem solid var(--black);
+	background-color: rgba(107, 198, 107, 0.7);
 	height: 5.2rem;
 }
 
@@ -98,12 +97,20 @@
         width: 0;
     }
     100% {
-        width: 360px;
+        width: 36rem;
     }
 }
 
 @media (max-width: 710px) {
 	.MyOrder {
 		width: 100%;
+	}
+	@keyframes swipeLeft {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 100%;
+		}
 	}
 }

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '@styles/Header.scss';
 import Menu from "@components/Menu";
 import MyOrder from "@containers/MyOrder";
+import MenuMobile from "@components/MenuMobile";
 import AppContext from "@context/AppContext";
 import menu from "@icons/icon_menu.svg"
 import logo from "@logos/logo_yard_sale.svg"
@@ -10,11 +11,13 @@ import shoppingCart from "@icons/icon_shopping_cart.svg"
 
 const Header = () => {
 	const [toggle, setToggle] = useState(false)
+	
 	const [toggleOrders, setToggleOrders] = useState(false)
-	const { state } = useContext(AppContext)
+	const { state, setMenuMobile, toggleMenu } = useContext(AppContext)
 	const handleToggle = () => {
 		setToggle(!toggle)
 	}
+
 	const verifyCart = (cartNumber) => {
 		if (cartNumber && (cartNumber < 9)) {
 		  return (
@@ -24,15 +27,20 @@ const Header = () => {
 		  return (
 			<div>+9</div>
 		  )
-		} else {
+		}else if (cartNumber == 9) {
+			return (
+			  <div>9</div>
+			)
+		}
+		 else {
 		  return null;
 		}
 	  }
 
 	return (
-		<nav>
+		<nav className='navegador'>
 			<figure className='menu-container'>
-				<img src={menu} alt="menu" className="menu" />
+				<img src={menu} alt="menu" onClick={() => setMenuMobile(!toggleMenu)} className="menu" />
 			</figure>
 			<div className="navbar-left">
 				<img src={logo} alt="logo" className="nav-logo" />
@@ -53,7 +61,7 @@ const Header = () => {
 						<Link to="/#">Toys</Link>
 					</li>
 					<li>
-						<Link to="/*">Others</Link>
+						<Link to="/">Others</Link>
 					</li>
 				</ul>
 			</div>
@@ -68,7 +76,9 @@ const Header = () => {
 			</div>
 			{toggle && <Menu />}
 			{toggleOrders && <MyOrder />}
+			{toggleMenu && <MenuMobile />}
 		</nav>
+		
 	);
 }
 

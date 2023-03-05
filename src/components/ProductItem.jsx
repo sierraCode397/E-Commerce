@@ -13,7 +13,7 @@ const ProductItem = ({producth}) => {
 
 	return (
 		<div className="ProductItem">
-			<img src={producth.images[0]} alt={producth.title} />
+				<img src={producth.images[0]} alt={producth.title} />
 			<div className="product-info">
 				<div>
 					<p>${producth.price}</p>

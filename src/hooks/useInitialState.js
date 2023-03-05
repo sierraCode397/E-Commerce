@@ -22,7 +22,11 @@ const useInitialState = () => {
         })
     }
 
+    const [toggleMenu, setMenuMobile] = useState(false)
+
 	return {
+        toggleMenu,
+        setMenuMobile,
 		state,
 		addToCart,
 		removeFromCart,
