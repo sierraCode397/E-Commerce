@@ -23,7 +23,7 @@ const MyOrder = () => {
 			<aside className="MyOrder">
 				<div className="title-container">		
 						<img src= {arrow} alt="arrow" onClick={handleMenu} className="arrow" />
-					<Link to="/orders" className="title">My order</Link>
+					<Link to="/orders" className="title" onClick={()=> setToggleOrders(!toggleOrders)}>My order</Link>
 				</div>
 				<div className="my-order-content">
 					{state.cart.map(product => (

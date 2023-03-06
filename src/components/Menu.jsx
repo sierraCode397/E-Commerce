@@ -16,7 +16,7 @@ const Menu = () => {
 					<Link to="/account" onClick={() => setToggle(!toggle)}>My account</Link>
 				</li>
 				<li>
-					<Link to="/login" onClick={() => setToggle(!toggle)}>Sign out</Link>
+					<Link to="/" onClick={() => setToggle(!toggle)}>Sign out</Link>
 				</li>
 			</ul>
 		</div>

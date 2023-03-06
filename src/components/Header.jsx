@@ -40,19 +40,19 @@ const Header = () => {
 				<img src={logo} alt="logo" className="nav-logo" />
 				<ul>
 					<li>
-						<Link to="/#">All</Link>
+						<Link to="/login">All</Link>
 					</li>
 					<li>
-						<Link to="/#">Clothes</Link>
+						<Link to="/login">Clothes</Link>
 					</li>
 					<li>
-						<Link to="/#">Electronics</Link>
+						<Link to="/login">Electronics</Link>
 					</li>
 					<li>
-						<Link to="/#">Furnitures</Link>
+						<Link to="/login">Furnitures</Link>
 					</li>
 					<li>
-						<Link to="/#">Toys</Link>
+						<Link to="/login">Toys</Link>
 					</li>
 					<li>
 						<a href="/">Others</a>

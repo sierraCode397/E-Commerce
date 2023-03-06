@@ -12,22 +12,22 @@ const MenuMobile = () => {
 
             <ul>
                 <li className="title-menu-mobile">
-                    <Link to="/#" className="title-menu">CATEGORIES</Link>
+                    <Link to="/login" className="title-menu">CATEGORIES</Link>
                 </li>
                 <li>
-                    <Link to="/#" onClick={() => setMenuMobile(!toggleMenu)}>All</Link>
+                    <Link to="/login" onClick={() => setMenuMobile(!toggleMenu)}>All</Link>
                 </li>
                 <li>
-                    <Link to="/#" onClick={() => setMenuMobile(!toggleMenu)}>Cameras</Link>
+                    <Link to="/login" onClick={() => setMenuMobile(!toggleMenu)}>Cameras</Link>
                 </li>
                 <li>
-                    <Link to="/#" onClick={() => setMenuMobile(!toggleMenu)}>Sistems</Link>
+                    <Link to="/login" onClick={() => setMenuMobile(!toggleMenu)}>Sistems</Link>
                 </li>
                 <li>
-                    <Link to="/#" onClick={() => setMenuMobile(!toggleMenu)}>Alarmas</Link>
+                    <Link to="/login" onClick={() => setMenuMobile(!toggleMenu)}>Alarmas</Link>
                 </li>
                 <li>
-                    <Link to="/#" onClick={() => setMenuMobile(!toggleMenu)}>Electronics</Link>
+                    <Link to="/login" onClick={() => setMenuMobile(!toggleMenu)}>Electronics</Link>
                 </li>
                 <li>
                     <a href="/" onClick={() => setMenuMobile(!toggleMenu)}>Others</a>
@@ -45,10 +45,10 @@ const MenuMobile = () => {
 
             <ul>
                 <li>
-                    <Link to="/#" className="email" onClick={() => setMenuMobile(!toggleMenu)}>izaack107@gmail.com</Link>
+                    <Link to="/login" className="email" onClick={() => setMenuMobile(!toggleMenu)}>izaack107@gmail.com</Link>
                 </li>
                 <li>
-                    <Link to="/login" className="sing-out" onClick={() => setMenuMobile(!toggleMenu)}>Sing out</Link>
+                    <Link to="/" className="sing-out" onClick={() => setMenuMobile(!toggleMenu)}>Sing out</Link>
                 </li>
             </ul>
 

@@ -30,8 +30,8 @@ const App = () => {
       <HashRouter>
         <Layout>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Login />} />
+            <Route path="/login" element={<Home />} />
             <Route path="/password-recovery" element={<PasswordRecovery />} />
             <Route path="/send-email" element={<SendEmail />} />
             <Route path="/new-password" element={<NewPassword />} />
