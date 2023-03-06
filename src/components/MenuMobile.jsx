@@ -30,7 +30,7 @@ const MenuMobile = () => {
                     <Link to="/#" onClick={() => setMenuMobile(!toggleMenu)}>Electronics</Link>
                 </li>
                 <li>
-                    <Link to="/" onClick={() => setMenuMobile(!toggleMenu)}>Others</Link>
+                    <a href="/" onClick={() => setMenuMobile(!toggleMenu)}>Others</a>
                 </li>
             </ul>
 

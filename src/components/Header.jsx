@@ -55,7 +55,7 @@ const Header = () => {
 						<Link to="/#">Toys</Link>
 					</li>
 					<li>
-						<Link to="/">Others</Link>
+						<a href="/">Others</a>
 					</li>
 				</ul>
 			</div>
