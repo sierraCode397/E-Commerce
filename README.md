@@ -28,7 +28,7 @@ Con React Router DOM permitio unir diferentes componentes, contenedores y pagina
 
 - **html-webpack-plugin**: Plugin de Webpack utilizado para generar un archivo HTML que incluye automáticamente los archivos generados por Webpack.
 
-- ** react**: Biblioteca de JavaScript utilizada para construir interfaces de usuario.
+- **react**: Biblioteca de JavaScript utilizada para construir interfaces de usuario.
 
 - **react-dom**: Biblioteca de JavaScript utilizada para manipular el árbol de elementos del DOM en una aplicación React.
 
